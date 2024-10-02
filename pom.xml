@@ -14,9 +14,6 @@
     <packaging>pom</packaging>
     <name>userservice</name>
 	<description>User service for Scaler e-comm</description>
-    <modules>
-        <module>Ecomm-Notifs</module>
-    </modules>
     <properties>
 		<java.version>17</java.version>
 	</properties>
