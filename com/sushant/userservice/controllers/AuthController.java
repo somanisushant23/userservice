@@ -19,11 +19,11 @@ public class AuthController {
     @PostMapping
     public ResponseEntity<UserDto> signUp(@RequestBody SignUpRequestDto signUpRequestDto) {
         UserDto userDto = authService.signUp(signUpRequestDto.getEmail(), signUpRequestDto.getPassword());
-        return new ResponseEntity<>(userDto, HttpStatus.OK);
+        return new ResponseEntity<UserDto>(userDto, HttpStatus.OK);
     }
 
     @GetMapping
     public ResponseEntity<String> sendEmail() {
-        return new ResponseEntity<>("posted to topic email", HttpStatus.OK);
+        return new ResponseEntity<String>("posted to topic email", HttpStatus.OK);
     }
 }

@@ -12,7 +12,7 @@ import java.util.Set;
 @Setter
 public class UserDto {
     private String email;
-    private Set<Role> roles = new HashSet<>();
+    private Set<Role> roles = new HashSet<Role>();
 
     public static UserDto from(User user) {
         UserDto userDto = new UserDto();
