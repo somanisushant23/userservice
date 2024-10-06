@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import static com.sushant.userservice.UserConstants.*;
 
 @Service
-public class AuthServiceImpl implements AuthService{
+public class AuthServiceImpl implements com.sushant.userservice.services.AuthService {
 
     private UserRepository userRepository;
 

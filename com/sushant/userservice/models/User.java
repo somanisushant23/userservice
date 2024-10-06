@@ -20,5 +20,5 @@ public class User extends BaseModel {
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
     @JsonIgnore
-    private Set<Role> roles = new HashSet<>();
+    private Set<Role> roles = new HashSet<Role>();
 }
